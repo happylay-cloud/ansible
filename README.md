@@ -24,3 +24,11 @@
 root用户计划每分钟检查仓库代码,代码更新后执行剧本并记录日志
 ansible master -m cron -a " name='ansible-pull' minute=*/1 hour=* day=* month=* weekday=* job='ansible-pull -C v0.0.2 -U https://github.com/happylay-cloud/ansible.git -d /data/happylay playbook/helloworld.yml --limit all -o >> /data/happylay/ansible-pull.log 2>&1' user=root "
 ````
+#### 4.查看定时任务
+````
+crontab -l
+````
+#### 5.取消定时任务
+````
+ansible master -m cron -a "state=absent name='master-cron'"
+````
