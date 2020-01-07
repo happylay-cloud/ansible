@@ -30,5 +30,5 @@ crontab -l
 ````
 #### 5.取消定时任务
 ````
-ansible master -m cron -a "state=absent name='master-cron'"
+ansible master -m cron -a "state=absent name='ansible-pull'"
 ````
