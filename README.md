@@ -4,6 +4,8 @@
 #### 自动化运维ansible-pull高级用法
 ````
  ansible-pull -U https://github.com/happylay-cloud/ansible.git -d /data/happylay playbook/helloworld.yml --limit all
+ 
+ ansible-pull -C v0.0.1 -U https://github.com/happylay-cloud/ansible.git -d /data/happylay playbook/helloworld.yml --limit all -o
 ````
 #### 参数说明
 | 参数| 说明| 
