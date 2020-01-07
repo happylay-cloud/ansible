@@ -6,11 +6,6 @@
  ansible-pull -U https://github.com/happylay-cloud/ansible.git -d /data/happylay playbook/helloworld.yml --limit all
 ````
 #### 参数说明
-````
-      
-      
-  
-````
 | 参数| 说明| 
 |:-|:-|
 |-U|仓库地址|
