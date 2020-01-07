@@ -8,6 +8,9 @@
  ansible-pull -C v0.0.1 -U https://github.com/happylay-cloud/ansible.git -d /data/happylay playbook/helloworld.yml --limit all -o
  
  ansible-pull -C master -U https://github.com/happylay-cloud/ansible.git -d /data/happylay playbook/helloworld.yml --limit all -o
+ 
+ ansible-pull -C v0.0.2 -U https://github.com/happylay-cloud/ansible.git -d /data/happylay playbook/helloworld.yml --limit all -o >> /data/happylay/ansible-pull.log 2>&1
+ 
 ````
 #### 2.参数说明
 | 参数| 说明| 
