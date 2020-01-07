@@ -1,6 +1,6 @@
 ---
 # 指定主机
-- hosts: all
+- hosts: node
   # 指定在被管理的主机上执行任务的用户            
   remote_user: 'root'           
   tasks:
