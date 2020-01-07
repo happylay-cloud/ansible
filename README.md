@@ -5,9 +5,16 @@
 ````
  ansible-pull -U https://github.com/happylay-cloud/ansible.git -d /data/happylay playbook/helloworld.yml --limit all
 ````
-#### 参数
+#### 参数说明
 ````
--U       仓库地址
--d       目标文件夹
---limit  主机清单(关键)
+      
+      
+  
 ````
+| 参数| 说明| 
+|:-|:-|
+|-U|仓库地址|
+|-d| 目标文件夹(必须为空)|
+|--limit|主机清单(关键)|
+|-o|代码库更新时执行剧本|
+|-C|代码版本 分支/标签|
